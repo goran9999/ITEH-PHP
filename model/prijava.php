@@ -47,7 +47,7 @@ class Prijava{
     }
 
     public function update(mysqli $conn){
-        $query="UPDATE prijave SET predmet=$this->predmet, katedra=$this->katedra,sala=$this->sala,datum=$this->datum";
+        $query="UPDATE prijave SET predmet='$this->predmet', katedra='$this->katedra',sala='$this->sala',datum='$this->datum'";
         return $conn->query($query);
     }
 
